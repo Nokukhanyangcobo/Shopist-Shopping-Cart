@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanyo's Cart</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Shopping with Kay</h1>
+        <div class="item" id="item1">
+            <img src="./Floral Casusal Dress.jpg" alt="Floral Casual Dress">
+            <p>casual bare back floral dress</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+            <button onclick="removeFromCart(1)">Remove from Cart</button>
+        </div>
+        <div class="item" id="item2">
+            <img src="./denim heels.jpg" alt="Denim Heels with red roses">
+            <p>blue denim heels</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+            <button onclick="removeFromCart(2)">Remove from Cart</button>
+        </div>
+        <div class="item" id="item3">
+            <img src="./Nude handbag.jpg" alt="handbag">
+            <p>Nude handbag with mini scarf</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+            <button onclick="removeFromCart(3)">Remove from Cart</button>
+        </div>
+        <div id="cart">
+            <h2>Take Me home</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here dynamically -->
+            </ul>
+            <p id="total">Total: R 0.00</p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
